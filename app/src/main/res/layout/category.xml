@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Category"
+    android:scrollbars="none">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/maincback"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="60dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/ic_youtube"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="1dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="20dp"
+                android:layout_toStartOf="@id/imageView"
+                android:fontFamily="serif-monospace"
+                android:text="Waz"
+                android:textColor="@color/white"
+                android:textSize="32sp"
+
+
+                android:shadowColor="#cf1d1d"
+                android:shadowDx="0.0"
+                android:shadowDy="0.0"
+                android:shadowRadius="8"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toEndOf="@id/imageView"
+                android:fontFamily="serif-monospace"
+                android:text="Tube"
+                android:textColor="@color/white"
+                android:textSize="32sp"
+                android:shadowColor="#cf1d1d"
+                android:shadowDx="0.0"
+                android:shadowDy="0.0"
+                android:shadowRadius="8"
+                />
+
+
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-50dp"
+            android:background="@drawable/maincback2"
+            android:layout_below="@id/relativeLayout"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:scrollbars="none"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:id="@+id/first"
+                    app:cardCornerRadius="14dp"
+                    >
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/card1">
+
+                        <ImageView
+                            android:id="@+id/imageView5"
+                            android:layout_width="99dp"
+                            android:layout_height="83dp"
+                            android:layout_marginBottom="16dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:srcCompat="@drawable/ic_path1" />
+
+                        <ImageView
+                            android:id="@+id/imageView6"
+                            android:layout_width="274dp"
+                            android:layout_height="35dp"
+                            android:layout_marginStart="28dp"
+                            android:layout_marginBottom="4dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:srcCompat="@drawable/ic_path2" />
+
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="24dp"
+                            android:text="মিজানুর রহমান আযহারির লাইফ \n স্টাইল "
+                            android:textColor="@color/white"
+                            android:textSize="24sp"
+
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.222"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/ripplef"/>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:id="@+id/second"
+                    android:layout_below="@id/first"
+                    android:layout_marginTop="20dp"
+                    app:cardCornerRadius="14dp"
+
+                    >
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/card2">
+
+                        <ImageView
+                            android:id="@+id/imageView52"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="4dp"
+                            android:layout_marginBottom="24dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:srcCompat="@drawable/ic_islam" />
+
+                        <ImageView
+                            android:id="@+id/imageView62"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="172dp"
+                            android:layout_marginBottom="16dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:srcCompat="@drawable/ic_star" />
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:text="মিজানুর রহমান আজহারির \nওয়াজ সমূহ"
+                            android:textColor="@color/white"
+                            android:textSize="23sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.1"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/ripplef"/>
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/third"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_below="@id/second"
+                    android:layout_marginTop="20dp"
+                    app:cardCornerRadius="14dp"
+
+                    >
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/card3">
+
+                        <ImageView
+                            android:id="@+id/imageView522"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="16dp"
+                            android:layout_marginBottom="16dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:srcCompat="@drawable/ic_youtube__1_" />
+
+                        <ImageView
+                            android:id="@+id/imageView622"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginBottom="16dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:srcCompat="@drawable/ic_play" />
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:text="মিজানুর রহমান আজহারির লাইভ \nভিডিও সমূহ "
+                            android:textColor="@color/white"
+
+                            android:textSize="23sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.192"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/ripplef" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:id="@+id/fourth"
+                    android:layout_below="@id/third"
+                    android:layout_marginTop="20dp"
+                    app:cardCornerRadius="14dp"
+
+                    >
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/card6">
+
+                        <TextView
+                            android:id="@+id/textView4a"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="32dp"
+                            android:text="প্রশ্ন ও উত্তর পর্ব "
+                            android:textColor="@color/white"
+
+                            android:textSize="24sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.173"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/ripplef"
+                            tools:layout_editor_absoluteX="0dp"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                        <ImageView
+                            android:id="@+id/imageView4"
+                            android:layout_width="100dp"
+                            android:layout_height="110dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/ic_question"
+                            app:tint="#E77272" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:id="@+id/fifth"
+                    android:layout_below="@id/fourth"
+                    android:layout_marginTop="20dp"
+                    app:cardCornerRadius="14dp"
+                    android:layout_marginBottom="80dp"
+
+                    >
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/card4">
+
+                        <ImageView
+                            android:id="@+id/imageView52d2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="16dp"
+                            android:layout_marginBottom="36dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:srcCompat="@drawable/ic_path_9" />
+
+                        <TextView
+                            android:id="@+id/textView5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="16dp"
+                            android:text="মিজানুর রহমান আজহারির ফেসবুক \nপেইজ ও পোস্ট"
+                            android:textColor="@color/white"
+
+                            android:textSize="23sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/ripplef"/>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/glowingText"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginTop="40dp"-->
+        <!--            android:padding="5dp"-->
+        <!--            android:shadowColor="#cf1d1d"-->
+        <!--            android:shadowDx="0.0"-->
+        <!--            android:shadowDy="0.0"-->
+        <!--            android:shadowRadius="8"-->
+        <!--            android:text="Radioactive"-->
+        <!--            android:textColor="#cf1d1d"-->
+        <!--            android:textSize="20sp"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintHorizontal_bias="0.498"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />-->
+
+        <LinearLayout
+            android:id="@+id/banner_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            tools:layout_editor_absoluteX="10dp" />
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

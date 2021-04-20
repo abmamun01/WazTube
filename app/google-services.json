@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "609377960371",
+    "project_id": "waztube-e540e",
+    "storage_bucket": "waztube-e540e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:609377960371:android:0d122823796bbec6428bc6",
+        "android_client_info": {
+          "package_name": "com.mamunsproject.waztube"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "609377960371-8s7srcc5mmpirgegss3v3e3l3q0r7t9c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdg5D_xaEYOsuMeak6zK7DOUgX5V-HMGo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "609377960371-8s7srcc5mmpirgegss3v3e3l3q0r7t9c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
